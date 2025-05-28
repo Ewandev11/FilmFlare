@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442921893873",
+    "project_id": "filmflareapp",
+    "storage_bucket": "filmflareapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442921893873:android:8f4cbcf35b924aeeeace50",
+        "android_client_info": {
+          "package_name": "com.example.filmflare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF1ZbivJRCYVDCvijoPonCrpiPSI6nk0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

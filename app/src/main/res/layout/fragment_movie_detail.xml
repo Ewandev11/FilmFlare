@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/bg_gradient_dark">
+
+        <!-- Back Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:icon="@drawable/ic_back"
+            android:layout_gravity="start"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="16dp" />
+
+        <!-- Movie Title -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Movie Overview -->
+        <TextView
+            android:id="@+id/textOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Movie Rating -->
+        <TextView
+            android:id="@+id/textRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Movie Release Date -->
+        <TextView
+            android:id="@+id/textReleaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Progress Bar while loading poster -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+
+        <!-- Movie Poster -->
+        <ImageView
+            android:id="@+id/imagePoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/movie_poster" />
+    </LinearLayout>
+</layout>

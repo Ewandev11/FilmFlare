@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- You can place this after your app theme if it exists -->
+    <style name="ButtonShapeAppearance">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

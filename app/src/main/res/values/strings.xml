@@ -1,0 +1,20 @@
+<resources>
+    <!-- Existing Strings -->
+    <string name="app_name">FilmFlare</string>
+    <string name="poster_image">Movie poster image</string>
+    <string name="rating_format">Rating: %1$.1f</string>
+    <string name="release_format">Release: %1$s</string>
+
+    <!-- New Strings for Content Descriptions and Hardcoded Text -->
+    <string name="logout">Logout</string>
+    <string name="select_genre">Select Genre</string>
+    <string name="logout_button">Logout Button</string>
+    <string name="genre_dropdown">Genre Dropdown</string>
+    <string name="popular">Popular</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="popular_category_chip">Popular Category Chip</string>
+    <string name="upcoming_category_chip">Upcoming Category Chip</string>
+    <string name="top_rated_category_chip">Top Rated Category Chip</string>
+    <string name="movie_poster">Movie Poster</string>
+</resources>

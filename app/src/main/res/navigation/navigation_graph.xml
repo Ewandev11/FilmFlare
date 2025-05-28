@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <!-- Dashboard Fragment -->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.filmflare.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_movieListFragment"
+            app:destination="@id/movieListFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <!-- Movie List Fragment -->
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.example.filmflare.ui.movie.ListMovFragment"
+        android:label="Movie List"
+        tools:layout="@layout/fragment_movie_list">
+
+        <!-- ✅ Added this action to allow logout to work -->
+        <action
+            android:id="@+id/action_movieListFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_movieListFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+
+    <!-- Movie Detail Fragment with argument -->
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.filmflare.ui.movie.DetailMovFragment"
+        android:label="Movie Detail"
+        tools:layout="@layout/fragment_movie_detail">
+        <argument
+            android:name="movie"
+            app:argType="com.example.filmflare.data.model.Movie" />
+    </fragment>
+
+    <!-- Login Fragment -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.filmflare.ui.auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
+
+    <!-- Signup Fragment -->
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.filmflare.ui.auth.SignupFragment"
+        android:label="Signup"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signupFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+
+</navigation>
